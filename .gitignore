@@ -1,0 +1,14 @@
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+
+# Editor/IDE specific
+.vscode/
+.history/
+memory-bank/
+
+# Node.js
+node_modules/
+
+# Log files
+*.log
