@@ -31,7 +31,7 @@
 
 1.  创建成功后，点击 **编辑代码 (Edit code)**。
 2.  删除编辑器中的默认代码。
-3.  复制 [`worker.js`](worker.js:1) 的全部内容，粘贴到编辑器中。
+3.  复制 [`src/worker.js`](src/worker.js:1) 的全部内容，粘贴到编辑器中。
 4.  点击 **部署 (Deploy)**。
 
 ### 3. 设置环境变量
@@ -60,3 +60,9 @@
 
 *   **查看日志**: 在 Worker 的 **日志 (Logs)** 页面，可以查看到每次定时任务的执行记录。
 *   **手动测试**: 访问 Worker URL (例如 `https://your-worker-name.your-subdomain.workers.dev`)，可以手动触发一次任务。
+
+**测试页面预览:**
+![测试页面预览](assets/ui-preview.webp)
+
+**Cloudflare 后台日志:**
+![Cloudflare 后台日志](assets/cloudflare-logs.webp)
