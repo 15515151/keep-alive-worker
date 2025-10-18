@@ -5,7 +5,7 @@ name = "keep-alive"
 main = "src/worker.js"
 
 # 你的 Worker 的兼容性日期。
-compatibility_date = "2025-7-23"
+compatibility_date = "2024-01-01"
 
 # Cron 触发器
 # 参考: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
