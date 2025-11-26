@@ -10,9 +10,16 @@ compatibility_date = "2024-01-01"
 # Cron 触发器
 # 参考: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 [triggers]
-crons = ["*/5 * * * *"]
+crons = ["* * * * *"]
+
+# KV命名空间绑定
+[[kv_namespaces]]
+binding = "DOMAINS_KV"
+id = "domains_kv_namespace"
+preview_id = "domains_kv_preview"
 
 # 环境变量和加密变量
 # 参考: https://developers.cloudflare.com/workers/wrangler/configuration/#variables
 [vars]
+# 备用配置（如果KV不可用）
 TARGET_DOMAINS = "[\"https://www.example.com\"]"
