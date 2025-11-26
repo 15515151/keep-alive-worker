@@ -1,0 +1,18 @@
+# 你的 Worker 名称。
+name = "keep-alive"
+
+# 你的 Worker 的入口点文件。
+main = "src/worker.js"
+
+# 你的 Worker 的兼容性日期。
+compatibility_date = "2024-01-01"
+
+# Cron 触发器
+# 参考: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["*/5 * * * *"]
+
+# 环境变量和加密变量
+# 参考: https://developers.cloudflare.com/workers/wrangler/configuration/#variables
+[vars]
+TARGET_DOMAINS = "[\"https://www.example.com\"]"
